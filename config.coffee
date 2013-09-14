@@ -10,4 +10,8 @@ exports.config =
     stylesheets:
       joinTo: 'stylesheets/app.css'
     templates:
-      joinTo: 'javascripts/app.js'
+      precompile: true
+      root: 'templates/'
+      defaultExtension: 'hbs'
+      joinTo: 
+        'javascripts/app.js': /^app/
